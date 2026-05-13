@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arssen Turizm - Türkiye'yi Keşfet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">A</span>
+                <span class="logo-text">Arssen Turizm</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#tours" class="nav-link">Turlar</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+                <li><a href="#auth" class="nav-link auth-btn">Giriş Yap</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Türkiye'yi Keşfet</h1>
+            <p>Kapadokya'nın peri bacalarından Pamukkale'nin beyaz travertinlerine, antik şehirlerden muhteşem kıyılara kadar her destinasyon sizi bekliyor.</p>
+            <button class="btn btn-primary">Turları Keşfet</button>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="tours">
+        <h2>Popüler Turlar</h2>
+        <div class="tours-grid" id="toursGrid">
+            <!-- Tours will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Galeri</h2>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Bizimle İletişime Geçin</h2>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Arssen Turizm. Tüm hakları saklıdır.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/arssenseyhat" target="_blank" class="social-link instagram-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Giriş Yap / Üye Ol</h2>
+            <form id="authForm">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Şifre" required>
+                <button type="submit" class="btn btn-primary">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
